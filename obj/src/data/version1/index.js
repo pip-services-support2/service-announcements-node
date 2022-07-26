@@ -1,0 +1,22 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AnnouncementStatusV1 = exports.AnnouncementV1Schema = exports.AnnouncementV1 = exports.PartyReferenceV1Schema = exports.PartyReferenceV1 = exports.AttachmentV1Schema = exports.AttachmentV1 = exports.LocationV1Schema = exports.LocationV1 = void 0;
+var LocationV1_1 = require("./LocationV1");
+Object.defineProperty(exports, "LocationV1", { enumerable: true, get: function () { return LocationV1_1.LocationV1; } });
+var LocationV1Schema_1 = require("./LocationV1Schema");
+Object.defineProperty(exports, "LocationV1Schema", { enumerable: true, get: function () { return LocationV1Schema_1.LocationV1Schema; } });
+var AttachmentV1_1 = require("./AttachmentV1");
+Object.defineProperty(exports, "AttachmentV1", { enumerable: true, get: function () { return AttachmentV1_1.AttachmentV1; } });
+var AttachmentV1Schema_1 = require("./AttachmentV1Schema");
+Object.defineProperty(exports, "AttachmentV1Schema", { enumerable: true, get: function () { return AttachmentV1Schema_1.AttachmentV1Schema; } });
+var PartyReferenceV1_1 = require("./PartyReferenceV1");
+Object.defineProperty(exports, "PartyReferenceV1", { enumerable: true, get: function () { return PartyReferenceV1_1.PartyReferenceV1; } });
+var PartyReferenceV1Schema_1 = require("./PartyReferenceV1Schema");
+Object.defineProperty(exports, "PartyReferenceV1Schema", { enumerable: true, get: function () { return PartyReferenceV1Schema_1.PartyReferenceV1Schema; } });
+var AnnouncementV1_1 = require("./AnnouncementV1");
+Object.defineProperty(exports, "AnnouncementV1", { enumerable: true, get: function () { return AnnouncementV1_1.AnnouncementV1; } });
+var AnnouncementV1Schema_1 = require("./AnnouncementV1Schema");
+Object.defineProperty(exports, "AnnouncementV1Schema", { enumerable: true, get: function () { return AnnouncementV1Schema_1.AnnouncementV1Schema; } });
+var AnnouncementStatusV1_1 = require("./AnnouncementStatusV1");
+Object.defineProperty(exports, "AnnouncementStatusV1", { enumerable: true, get: function () { return AnnouncementStatusV1_1.AnnouncementStatusV1; } });
+//# sourceMappingURL=index.js.map

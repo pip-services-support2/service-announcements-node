@@ -1,0 +1,1 @@
+{"version":3,"file":"LocationV1Schema.js","sourceRoot":"","sources":["../../../../src/data/version1/LocationV1Schema.ts"],"names":[],"mappings":";;;AAAA,6EAA2D;AAC3D,6EAAuD;AAEvD,MAAa,gBAAiB,SAAQ,0CAAY;IAC9C;QACI,KAAK,EAAE,CAAC;QACR,IAAI,CAAC,oBAAoB,CAAC,MAAM,EAAE,sCAAQ,CAAC,MAAM,CAAC,CAAC;QACnD,IAAI,CAAC,oBAAoB,CAAC,KAAK,EAAE,IAAI,CAAC,CAAC;IAC3C,CAAC;CACJ;AAND,4CAMC"}
