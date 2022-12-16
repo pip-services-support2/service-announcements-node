@@ -7,7 +7,7 @@ const AnnouncementsMongoDbPersistence_1 = require("../persistence/AnnouncementsM
 const AnnouncementsFilePersistence_1 = require("../persistence/AnnouncementsFilePersistence");
 const AnnouncementsMemoryPersistence_1 = require("../persistence/AnnouncementsMemoryPersistence");
 const AnnouncementsController_1 = require("../logic/AnnouncementsController");
-const AnnouncementsHttpServiceV1_1 = require("../services/version1/AnnouncementsHttpServiceV1");
+const AnnouncementsCommandableHttpServiceV1_1 = require("../services/version1/AnnouncementsCommandableHttpServiceV1");
 class AnnouncementsServiceFactory extends pip_services3_components_nodex_1.Factory {
     constructor() {
         super();
@@ -15,7 +15,7 @@ class AnnouncementsServiceFactory extends pip_services3_components_nodex_1.Facto
         this.registerAsType(AnnouncementsServiceFactory.FilePersistenceDescriptor, AnnouncementsFilePersistence_1.AnnouncementsFilePersistence);
         this.registerAsType(AnnouncementsServiceFactory.MongoDbPersistenceDescriptor, AnnouncementsMongoDbPersistence_1.AnnouncementsMongoDbPersistence);
         this.registerAsType(AnnouncementsServiceFactory.ControllerDescriptor, AnnouncementsController_1.AnnouncementsController);
-        this.registerAsType(AnnouncementsServiceFactory.HttpServiceDescriptor, AnnouncementsHttpServiceV1_1.AnnouncementsHttpServiceV1);
+        this.registerAsType(AnnouncementsServiceFactory.CmdHttpServiceDescriptor, AnnouncementsCommandableHttpServiceV1_1.AnnouncementsCommandableHttpServiceV1);
     }
 }
 exports.AnnouncementsServiceFactory = AnnouncementsServiceFactory;
@@ -24,5 +24,5 @@ AnnouncementsServiceFactory.MemoryPersistenceDescriptor = new pip_services3_comm
 AnnouncementsServiceFactory.FilePersistenceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-announcements", "persistence", "file", "*", "1.0");
 AnnouncementsServiceFactory.MongoDbPersistenceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-announcements", "persistence", "mongodb", "*", "1.0");
 AnnouncementsServiceFactory.ControllerDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-announcements", "controller", "default", "*", "1.0");
-AnnouncementsServiceFactory.HttpServiceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-announcements", "service", "http", "*", "1.0");
+AnnouncementsServiceFactory.CmdHttpServiceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-announcements", "service", "commandable-http", "*", "1.0");
 //# sourceMappingURL=AnnouncementsServiceFactory.js.map

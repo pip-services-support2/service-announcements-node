@@ -10,7 +10,7 @@ import { PartyReferenceV1 } from '../../../src/data/version1/PartyReferenceV1';
 import { AnnouncementV1 } from '../../../src/data/version1/AnnouncementV1';
 import { AnnouncementsMemoryPersistence } from '../../../src/persistence/AnnouncementsMemoryPersistence';
 import { AnnouncementsController } from '../../../src/logic/AnnouncementsController';
-import { AnnouncementsHttpServiceV1 } from '../../../src/services/version1/AnnouncementsHttpServiceV1';
+import { AnnouncementsCommandableHttpServiceV1 } from '../../../src/services/version1/AnnouncementsCommandableHttpServiceV1';
 
 let httpConfig = ConfigParams.fromTuples(
     "connection.protocol", "http",
@@ -40,8 +40,8 @@ let ANNOUNCEMENT2 = <AnnouncementV1>{
     content: new MultiString({ en: 'Sample Announcement #2' })
 };
 
-suite('AnnouncementsHttpServiceV1', ()=> {
-    let service: AnnouncementsHttpServiceV1;
+suite('AnnouncementsCommandableHttpServiceV1', ()=> {
+    let service: AnnouncementsCommandableHttpServiceV1;
 
     let rest: any;
 
@@ -49,13 +49,13 @@ suite('AnnouncementsHttpServiceV1', ()=> {
         let persistence = new AnnouncementsMemoryPersistence();
         let controller = new AnnouncementsController();
 
-        service = new AnnouncementsHttpServiceV1();
+        service = new AnnouncementsCommandableHttpServiceV1();
         service.configure(httpConfig);
 
         let references: References = References.fromTuples(
             new Descriptor('service-announcements', 'persistence', 'memory', 'default', '1.0'), persistence,
             new Descriptor('service-announcements', 'controller', 'default', 'default', '1.0'), controller,
-            new Descriptor('service-announcements', 'service', 'http', 'default', '1.0'), service
+            new Descriptor('service-announcements', 'service', 'commandable-http', 'default', '1.0'), service
         );
         controller.setReferences(references);
         service.setReferences(references);

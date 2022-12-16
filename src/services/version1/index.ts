@@ -1,1 +1,1 @@
-export { AnnouncementsHttpServiceV1 } from './AnnouncementsHttpServiceV1';
+export { AnnouncementsCommandableHttpServiceV1 } from './AnnouncementsCommandableHttpServiceV1';
