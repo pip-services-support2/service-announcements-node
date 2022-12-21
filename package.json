@@ -1,6 +1,6 @@
 {
     "name": "service-announcements-node",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": "Conceptual Vision Consulting LLC",
     "description": "System announcements microservice in Node.js / ES2017",
     "contributors": [
