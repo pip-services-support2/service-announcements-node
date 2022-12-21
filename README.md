@@ -130,13 +130,13 @@ Example of microservice configuration
 
 - descriptor: "service-announcements:controller:default:default:1.0"
 
-- descriptor: "service-attachments:client:http:default:1.0"
+- descriptor: "service-attachments:client:commandable-http:default:1.0"
   connection:
     protocol: "http"
     host: "0.0.0.0"
     port: 8082
 
-- descriptor: "service-announcements:service:http:default:1.0"
+- descriptor: "service-announcements:service:commandable-http:default:1.0"
   connection:
     protocol: "http"
     host: "0.0.0.0"
